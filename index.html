@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box" class="box">
+        <a href="#length">Length</a>
+        <a href="#temperature">Temperature</a>
+        <a href="#weight">Weight</a>
+        <div id="length" class="length">
+            <div id="menu" class="menu">
+                <select name="" id="take">
+                    <option value="meter">Meter</option>
+                    <option value="cm">cm</option>
+                    <option value="foot">foot</option>    
+                </select>
+                <select name="" id="assign">
+                    <option value="meter">Meter</option>
+                    <option value="cm">cm</option>
+                    <option value="foot">foot</option>  
+                    <p id="demo" contenteditable="true" class="demo" onkeyup="len()">0</p>
+                    <p id="inc" contenteditable="true" onkeyup="len()">0</p>
+                </select>
+            </div>
+        </div>
+        <div id="temperature" class="temperature">
+            <div id="menu" class="menu">
+                <span class="demo">Celsius</span>
+                <span class="inc">Fahrenheit</span>
+                <p id="celi" contenteditable="true" class="demo" onkeyup="getceli()">0</p>
+                <p id="fah" contenteditable="true" class="inc">0</p>
+            </div>
+        </div>       
+
+        <div id="weight">
+            <div class="menu">
+                <span class="demo">Kilogram</span>
+                <span class="inc">Gram</span>
+                <p id="kilo" contenteditable="true" class="demo" onkeyup="getgram()">0</p>
+                <p id="gram" contenteditable="true" class="inc" onkeyup="getkg()">0</p>
+            </div>
+        </div>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
